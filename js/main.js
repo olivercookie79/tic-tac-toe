@@ -49,7 +49,7 @@ $('.cell').on('click', function(){
     //$('.cell')is the same as document.getElementsByClassName.
     //console.log('current player1', currentPlayer);
     if ($(this).hasClass('disabled')){
-      alert('Input Violation! This Cell is Enabled!');
+      alert('Input Violation! ACCESSS DENIED!');
     }
     else if (currentPlayer === 'hacker1') {
       $(this).html('X');
@@ -68,43 +68,52 @@ $('.cell').on('click', function(){
         $('#2').html() === "X"
       ){
         alert("Hack SUCCESSFUL");
+        return;
 
     }else if ($('#3').html() === "X" &&
               $('#4').html() === "X" &&
               $('#5').html() === "X"
             ){
         alert("Hack SUCCESSFUL");
+        return
 
     }else if ($('#6').html() === "X" &&
               $('#7').html() === "X" &&
               $('#8').html() === "X"
             ){
-
+              alert("Hack SUCCESSFUL");
+              return
     }else if ($('#0').html() === "X" &&
               $('#3').html() === "X" &&
               $('#6').html() === "X"
             ){
-
+              alert("Hack SUCCESSFUL");
+              return
     }else if ($('#1').html() === "X" &&
               $('#4').html() === "X" &&
               $('#7').html() === "X"
             ){
-
+              alert("Hack SUCCESSFUL");
+              return
     }else if ($('#2').html() === "X" &&
               $('#5').html() === "X" &&
               $('#8').html() === "X"
             ){
-
+              alert("Hack SUCCESSFUL");
+              return
     }else if ($('#0').html() === "X" &&
               $('#4').html() === "X" &&
               $('#8').html() === "X"
     ){
-
+      alert("Hack SUCCESSFUL");
+      return
     }else if ($('#6').html() === "X" &&
               $('#4').html() === "X" &&
               $('#2').html() === "X"
     ){
-
+      alert("Hack SUCCESSFUL");
+      return
+    }
 
 // check if "O"has won.
 
@@ -112,52 +121,85 @@ $('.cell').on('click', function(){
         $('#1').html() === "O" &&
         $('#2').html() === "O"
       ){
-
+        alert("Hack SUCCESSFUL");
+        return
     }else if
        ($('#3').html() === "O" &&
         $('#4').html() === "O" &&
         $('#5').html() === "O"
       ){
-
+        alert("Hack SUCCESSFUL");
+        return
     }else if
        ($('#6').html() === "O" &&
         $('#7').html() === "O" &&
         $('#8').html() === "O"
       ){
-
+        alert("Hack SUCCESSFUL");
+        return
       }else if
          ($('#0').html() === "O" &&
           $('#3').html() === "O" &&
           $('#6').html() === "O"
         ){
-
+          alert("Hack SUCCESSFUL");
+          return
       }else if
           ($('#1').html() === "O" &&
            $('#4').html() === "O" &&
            $('#7').html() === "O"
         ){
-
+          alert("Hack SUCCESSFUL");
+          return
       }else if
           ($('#2').html() === "O" &&
            $('#5').html() === "O" &&
            $('#8').html() === "O"
         ){
-
+          alert("Hack SUCCESSFUL");
+          return
       }else if
          ($('#0').html() === "O" &&
           $('#4').html() === "O" &&
           $('#8').html() === "O"
       ){
-
+        alert("Hack SUCCESSFUL");
+        return
       }else if
          ($('#6').html() === "O" &&
           $('#4').html() === "O" &&
           $('#2').html() === "O"
       ){
+        alert("Hack SUCCESSFUL");
+        return
 
         switchPlayer();
         console.log('win!');
       } // end of else statements
 
+  // Checking if draw
+  // get grid
+  const grid = $('.cell');
+  console.log( grid );
+
+  // create an array representing contents of the grid
+  //check if there are any free spaces on grid
+  let gridContents = [];
+  for (var i = 0; i < grid.length; i++) {
+    gridContents.push(grid[i].innerHTML)
   }
+
+  // check if gridContents contains any blank spaces
+  if ( ! gridContents.includes('') ) {
+    console.log('its a draw!');
+  }
+
+
+
+
+
+
+
+
+
 }); // End of click function
