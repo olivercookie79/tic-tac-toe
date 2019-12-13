@@ -1,23 +1,29 @@
-TICK TACK HACK!!!
+TIC TAC HACK!!!
 
 Welcome to the CYBER PUNK inspired version of  TIC TAC TOE!!
 
 Overview
-CP TTT is a variation of TIC TAC TOE as a Hacking Game.
+TIC TAC HACK is a variation of TIC TAC TOE as a Hacking Game.
 For a successful “Hack” you need to win the game ie with 3 X or O in a row.
-You play as "Hacker 1", and  Hacker2 is player 2. Ideally the end goal is to play against 'AI' to hjack the system
+You play as "Hacker 1", and  Hacker2 is player 2. Ideally the end goal is to play
+against 'AI' to hijack the system
 Successful "Hack" will display’ Hack Success: Access Granted”
 
 If lost against CPU AI (if possible to implement) message will be “Access Denied”
 
-Featues
+FEATURES Wishlist:
+-Ability to Select 2 Player or 1 Player vs AI /CPU
+-fix messages to display as HTML
+-AI Levels of Difficulty Easy/Normal/Hard/Imposibru!
+-Trigger Audio/Voice for all warnings, unsuccessful hacks, successful hacks etc.
+-Audio for Game Start/Reset
+-change colours to blue
+-Animate illumination changes in color when buttons clicked
+-Graphics Improvements
+-scalable for Phones
 
--Play against AI
--Trigger Audio
 
-
-
-Some Pseudo Code:
+Some (rough) Pseudo Code:
 
 STRUCTURE
 
@@ -121,4 +127,16 @@ reset game.
 
 FEATURES
 
-when the player marks an occupied cell, warning flashes up  reporting "Input Code Violation! ACESS DENIED!"
+
+
+POST MORTEM
+Positives: Generally happy but frustrated as I stil dont know a lot about Javascript.
+Needed help to figure out certain aspects of the code
+Became painfully aware of my limitations of coding knowlege
+Need to still get familiar with Javascript and JQuery
+
+CSS is still annoying.
+
+Want to keep working on the project
+
+```
